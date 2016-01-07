@@ -31,7 +31,6 @@
 <h4>Quality</h4>
 <p class="quality" rel="quality">
 <?php
-    var_dump(get_field('quality')->name);
     switch (get_field('quality')->name) {
         case '5':
             echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-5.png" alt="no star Web data" />';
