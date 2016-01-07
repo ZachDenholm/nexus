@@ -1,0 +1,15 @@
+.banner {
+    .brand {
+        display: inline-block;
+    }
+    .nav-primary {
+        display: inline-block;
+        ul.nav {
+            display: inline-block;
+            margin: 0;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
