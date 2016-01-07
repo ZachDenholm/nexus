@@ -1,7 +1,7 @@
 <?php get_template_part('templates/page', 'header'); 
 
 $contentArgs = array(
-    'post_type' => array( 'datasets'),
+    'post_type' => array( 'dataset'),
     'cat' => 14,
     'posts_per_page' => 10,
     'orderby' => 'modified',
