@@ -28,6 +28,37 @@
     <?php endforeach; ?>
 </p>
 
+<h4>Quality</h4>
+<p class="quality" rel="quality">
+<?php
+    switch (get_field('quality')) {
+        case '5':
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-5.png" alt="no star Web data" />';
+            break;
+
+        case '4':
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-4.png" alt="no star Web data" />';
+            break;
+
+        case '3':
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-3.png" alt="no star Web data" />';
+            break;
+
+        case '2':
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-2.png" alt="no star Web data" />';
+            break;
+
+        case '1':
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-1.png" alt="no star Web data" />';
+            break;
+        
+        default:
+            echo '<img src="http://lab.linkeddata.deri.ie/2010/lod-badges/img/data-badge-0.png" alt="no star Web data" />';
+            break;
+    }
+?>
+</p>
+
 <h4>Updated</h4>
 <p><time class="updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time></p>
 
