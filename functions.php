@@ -28,7 +28,6 @@ foreach ($sage_includes as $file) {
 unset($file, $filepath);
 
 // Enqueue Google Fonts
-
 function google_fonts() {
   $query_args = array(
     'family' => 'Open+Sans:400,400italic,700,700italic',
@@ -37,7 +36,7 @@ function google_fonts() {
   wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 }
             
-add_action('wp_enqueue_scripts', 'google_fonts');
+add_action('wp_enqueue_scripts', 'google_fonts', 200);
 
 /**
  * Redirect user after successful login.
