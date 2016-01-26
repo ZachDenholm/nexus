@@ -1,0 +1,28 @@
+article.dataset {
+    header {
+        h1 {
+
+        }
+    }
+    .entry-content {
+        h4 {
+
+        }
+    }
+    .entry-meta {
+        h4 {
+
+        }
+        .meta-classification {
+            width: 49%;
+            float:left;
+        }
+        .meta-submittor {
+            width: 49%;
+            float:left;
+        }
+    }
+    .comments {
+        clear:both;
+    }
+}

@@ -1,7 +1,9 @@
 <footer class="content-info">
   <div class="container">
     <div class="copyright">
-        <a href="/license">&copy; Copyright <?php echo date('Y'); ?> Date.je. Some Rights Reserved</a>
+        <ul class="nav">
+            <li><a href="/license">&copy; Copyright <?php echo date('Y'); ?> Date.je. Some Rights Reserved</a></li>
+        </ul>
     </div>
     <div class="menu">
         <?php

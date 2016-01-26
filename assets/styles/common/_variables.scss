@@ -1,9 +1,16 @@
 // Glyphicons font path
-$icon-font-path:        "../fonts/";
+$icon-font-path: "../fonts/";
 
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-blue: #004056;
+$brand-teal: #30858B;
+$brand-green: #6CC6B3;
+$brand-grey: #C0E2C6;
+$brand-cream: #F8F6C8;
+
+$brand-primary: $brand-blue;
+$brand-secondary: $brand-teal;

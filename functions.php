@@ -63,3 +63,18 @@ function add_custom_types_to_tax( $query ) {
     }
 }
 add_filter( 'pre_get_posts', 'add_custom_types_to_tax' );
+
+// OVerride the archive title
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_category() ) {
+
+        $title = single_cat_title( '', false );
+
+    } elseif ( is_archive() ) {
+        $title = 'Approved Datasets';
+    }
+
+    return $title;
+
+});
