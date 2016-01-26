@@ -1,5 +1,6 @@
 <header class="banner">
   <div class="container">
+    <h1>Data.je - The Jersey Open Data Project</h1>
     <nav class="nav-primary">
       <ul id="menu-main" class="nav">
         <?php

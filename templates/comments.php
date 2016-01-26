@@ -32,5 +32,19 @@ if (post_password_required()) {
     </div>
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php 
+  $comments_args = array(
+    // change the title of send button 
+    'label_submit'=>'Send',
+    // change the title of the reply section
+    'title_reply'=>'Discuss this Dataset',
+    // remove "Text or HTML to be displayed after the set of comment fields"
+    'comment_notes_after' => '',
+    // Update the login link
+    'must_log_in' => '<p class="must-log-in">You must be <a href="/login/">logged in</a> to post a comment!</p>',
+    // redefine your own textarea (the comment body)
+    'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+);
+
+  comment_form($comments_args); ?>
 </section>

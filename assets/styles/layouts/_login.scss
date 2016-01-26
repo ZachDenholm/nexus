@@ -1,0 +1,50 @@
+$indent: 9em;
+.login {
+    #loginform-custom {
+        .login-username {
+            label {
+                width: $indent;
+                text-align:right;
+            }
+            input {
+                width: 30em;
+            }
+        }
+        .login-password {
+            label {
+                width: $indent;
+                text-align:right;
+            }
+            input {
+                width: 30em;
+            }
+        }
+          
+        .login-remember {
+            label {
+                width: $indent;
+                text-align:right;
+                margin-left: 9em;
+            }
+            input {
+
+            }
+        }
+        .login-submit {
+            .button-primary {
+                margin-left: $indent;
+                width: 30em;
+                background: $brand-primary;
+                color: white;
+                border: 1px solid $brand-primary;
+                &:hover {
+                    background: $brand-secondary;
+                }
+            }
+        }
+    }
+    .forgotten-password {
+        margin-left: $indent;
+        margin-bottom: 50px;
+    }
+}

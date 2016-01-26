@@ -1,0 +1,13 @@
+.register {
+    .gform_button {
+        width: 97.45%;
+        background: $brand-primary;
+        color: white;
+        border: 1px solid $brand-primary;
+        padding: 10px;
+        font-size: 20px  !important;
+        &:hover {
+            background: $brand-secondary;
+        }
+    }
+}
