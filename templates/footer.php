@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info cf">
   <div class="container">
     <div class="copyright">
         <ul class="nav">
@@ -14,6 +14,10 @@
     </div>
     <div class="widgets">
         <?php dynamic_sidebar('sidebar-footer'); ?>
+    </div>
+    <div class="brand">
+        <div class="icons"></div>
+        <div class="logo"></div>
     </div>
   </div>
 </footer>

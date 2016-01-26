@@ -1,5 +1,7 @@
 footer {
     margin-top: 50px;
+    padding: 1px;
+    padding-bottom: 20px;
     background-color: $brand-primary;
     color: white;
     a {
@@ -22,6 +24,25 @@ footer {
         .widget {
             width: 20%;
             float: left;
+        }
+    }
+    .brand {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        .icons {
+            float: left;
+            width: 247px;
+            height: 65px;
+            background: transparent url(../images/icons-white.png) no-repeat top left;
+            background-size: 247px;
+        }
+        .logo {
+            float: right;
+            width: 200px;
+            height: 65px;
+            background: transparent url(../images/logo-white.png) no-repeat top right;   
+            background-size: 200px;
         }
     }
 }
