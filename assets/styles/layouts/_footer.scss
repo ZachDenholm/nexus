@@ -17,6 +17,9 @@ footer {
             margin: 0;
             li {
                 display:inline-block;
+                @media (max-width: $screen-xs-max) {
+                    display:block;
+                }                    
             }
         }
     }
@@ -43,6 +46,9 @@ footer {
             height: 65px;
             background: transparent url(../images/logo-white.png) no-repeat top right;   
             background-size: 200px;
+            @media (max-width: $screen-xs-max) {
+                margin-top:20px;
+            }                    
         }
     }
 }

@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="container">
     <h1>Data.je - The Jersey Open Data Project</h1>
-<nav class="navbar nav-primary" role="navigation">
+    <nav class="navbar nav-primary" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -11,8 +11,7 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-              <div id="navbar" class="navbar-collapse collapse">
-
+    <div id="navbar" class="navbar-collapse collapse">
         <?php
             wp_nav_menu( array(
                 'menu'              => 'primary',
@@ -26,8 +25,7 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-
-                    <ul class="nav navbar-nav ">
+        <ul class="nav navbar-nav ">
         <?php if ( is_user_logged_in() ): ?>
           <li class="menu-item menu-your-profile"><a href="<?php echo wp_logout_url( $redirect ); ?>" class="auth logout">Logout</a>
         <?php else: ?>
@@ -36,6 +34,6 @@
         <?php endif; ?>
             </ul>
         </div>
-</nav>
+    </nav>
   </div>
 </header>
