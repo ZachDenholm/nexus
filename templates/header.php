@@ -25,7 +25,7 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-        <ul class="nav navbar-nav ">
+        <ul class="nav navbar-nav">
         <?php if ( is_user_logged_in() ): ?>
           <li class="menu-item menu-your-profile"><a href="<?php echo wp_logout_url( $redirect ); ?>" class="auth logout">Logout</a>
         <?php else: ?>

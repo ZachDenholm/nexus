@@ -3,6 +3,7 @@
     .container {
         @media (max-width: $screen-xs-max) {
             margin-left: 5px;
+            padding-right: 3px;
             padding-left: 0; 
         }
         h1 {
@@ -29,7 +30,26 @@
 
             @media (max-width: $screen-xs-max) {
                 font-size:1.8em;
+
+                ul.nav {
+                    background-color: $nav-link-hover-bg;
+                    margin-top:0;
+                    margin-bottom:0;
+                    li {
+                        border-bottom: 2px solid white;
+                    }
+                } 
             }                    
+
+            @media (max-width: $screen-sm-min) { 
+                ul.nav {
+                    li {
+                        a {
+                            padding: 10px 6px;
+                        }
+                    }
+                } 
+            }
 
             @media (min-width: $screen-sm-min) { 
                 width: 100%;
@@ -41,15 +61,24 @@
                         border: 1px solid $brand-secondary;
                         background-color: $brand-primary;
                         border-bottom: none;
-                        margin-left:5px;
                         a {
                             color: white;
-                            padding: 10px 15px;
                         }
                         &:hover {
                             a {
                                 color: $brand-primary;
                             }   
+                        }
+                    }
+                } 
+            }
+
+            @media (min-width: $screen-md-min) { 
+                ul.nav {
+                    li {
+                        margin-left:5px;
+                        a {
+                            padding: 10px 15px;
                         }
                     }
                 }  

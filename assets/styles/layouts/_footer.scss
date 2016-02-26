@@ -9,6 +9,9 @@ footer {
     }
     .copyright {
         display:inline-block;
+        @media (max-width: $screen-xs-max) {
+            display:block;
+        }                    
     }
     .menu {
 
